@@ -7,6 +7,10 @@ spring:
       name: item-service
       profile: dev
       
+    inetutils:
+      ignored-interfaces: # 忽略的网卡
+        - VM.*
+      
 eureka:
   client:
     service-url:
